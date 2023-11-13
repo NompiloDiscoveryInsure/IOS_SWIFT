@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2DD0AB2B0239300069DF87 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2DD0AA2B0239300069DF87 /* HeaderView.swift */; };
 		8E9822C82AFCCB2900E51769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9822C72AFCCB2900E51769 /* AppDelegate.swift */; };
 		8E9822CA2AFCCB2900E51769 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9822C92AFCCB2900E51769 /* SceneDelegate.swift */; };
 		8E9822CC2AFCCB2900E51769 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9822CB2AFCCB2900E51769 /* CalculatorVC.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E2DD0AA2B0239300069DF87 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8E9822C42AFCCB2900E51769 /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9822C72AFCCB2900E51769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E9822C92AFCCB2900E51769 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				8E98230D2AFCE9F800E51769 /* BillInputView.swift */,
 				8E98230F2AFCEB0200E51769 /* TipInputView.swift */,
 				8E9823112AFCEB4F00E51769 /* SplitInputView.swift */,
+				8E2DD0AA2B0239300069DF87 /* HeaderView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				8E98230A2AFCE7AD00E51769 /* LogoView.swift in Sources */,
 				8E98230E2AFCE9F800E51769 /* BillInputView.swift in Sources */,
 				8E9823172AFCFF9600E51769 /* ThemeFont.swift in Sources */,
+				8E2DD0AB2B0239300069DF87 /* HeaderView.swift in Sources */,
 				8E9822C82AFCCB2900E51769 /* AppDelegate.swift in Sources */,
 				8E98231D2AFE2A4100E51769 /* LabelFactory.swift in Sources */,
 				8E9822CA2AFCCB2900E51769 /* SceneDelegate.swift in Sources */,

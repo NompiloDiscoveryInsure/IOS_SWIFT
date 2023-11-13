@@ -13,7 +13,7 @@ class CalculatorVC: UIViewController {
     //1. Create the view components
     private let logoView = LogoView()
     private let resultView = ResultView()
-    private let billInputView = TipInputView()
+    private let billInputView = BillInputView()
     private let tipInputView = TipInputView()
     private let splitInputView = SplitInputView()
 
