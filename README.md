@@ -13,7 +13,17 @@ Date: 10/10/2023
 - Added Logo view details
 - Added Result View
 - Added BillInputView
+
+Date: 13/10/2023
 - Added TipInputView
 - Added SplitInputView
+- ui cleanup
+
+Section 2: Setup view model
+- Added view Model
+
+Date 14/10/2023
+- Continue with adding view model
+
 
   
