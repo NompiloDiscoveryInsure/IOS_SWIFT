@@ -8,8 +8,8 @@
 import UIKit
 
 struct ThemeColor{
-    static let bg = UIColor(hexString:"CDB4DB")
-    static let primary = UIColor(hexString: "FFAFCC")
+    static let bg = UIColor(hexString:"FFFCF2")
+    static let primary = UIColor(hexString: "EB5E28")
     static let secondary = UIColor(hexString: "A2D2FF")
     static let text = UIColor(hexString: "000000")
     static let seperator = UIColor(hexString: "CCCCCC")
