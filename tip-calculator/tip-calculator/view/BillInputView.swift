@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Combine
+import CombineCocoa
 
 class BillInputView: UIView{
     
@@ -62,15 +64,32 @@ class BillInputView: UIView{
         return textfield
     }()
     
+    //creates observable which passes input to viewSubject ---they accept/emit values
+    private let billSubject: PassthroughSubject<Double, Never> = .init()
+    var valuePublisher: AnyPublisher<Double, Never> {
+        return billSubject.eraseToAnyPublisher()
+    }
+    
+    private var cancellables = Set<AnyCancellable>()
     
     init(){
         super.init(frame: .zero)
         layout()
+        observe()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder: has not been implemented")
     }
+    
+    //create observer function that takes input value
+    private func observe(){
+        textField.textPublisher.sink{[unowned self]
+            text in
+            billSubject.send(text?.doubleValue ?? 0)
+        }.store(in: &cancellables)
+    }
+    
     
     //4. generate layout
     private func layout(){
