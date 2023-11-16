@@ -20,7 +20,7 @@ class AmountView: UIView{
     }()
     
     
-    private lazy var AmoutLabel: UILabel = {
+    private lazy var AmountLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = textAlignment
         label.textColor = ThemeColor.primary
@@ -38,7 +38,7 @@ class AmountView: UIView{
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews:[
             titleLabel,
-            AmoutLabel
+            AmountLabel
         ])
         stackView.axis = .vertical
         return stackView
@@ -53,6 +53,16 @@ class AmountView: UIView{
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(amount: Double){
+        let text = NSMutableAttributedString(
+            string: amount.currencyFormatted,
+            attributes: [.font: Themefont.bold(ofSize: 24)])
+        text.addAttributes([
+            .font: Themefont.bold(ofSize: 16)],
+            range: NSMakeRange(0, 1))
+        AmountLabel.attributedText = text
     }
     
     private func layout(){

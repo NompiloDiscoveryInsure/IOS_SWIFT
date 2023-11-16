@@ -38,6 +38,7 @@
 		8EDD32472B039159007164FE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD32462B039159007164FE /* String+Extension.swift */; };
 		8EDD32492B03D895007164FE /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD32482B03D895007164FE /* UIResponder+Extension.swift */; };
 		8EDD324B2B061361007164FE /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324A2B061361007164FE /* Int+Extension.swift */; };
+		8EDD324D2B0637F3007164FE /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324C2B0637F3007164FE /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		8EDD32462B039159007164FE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		8EDD32482B03D895007164FE /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
 		8EDD324A2B061361007164FE /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		8EDD324C2B0637F3007164FE /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				8EDD32462B039159007164FE /* String+Extension.swift */,
 				8EDD32482B03D895007164FE /* UIResponder+Extension.swift */,
 				8EDD324A2B061361007164FE /* Int+Extension.swift */,
+				8EDD324C2B0637F3007164FE /* Double+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				8E98230A2AFCE7AD00E51769 /* LogoView.swift in Sources */,
 				8E98230E2AFCE9F800E51769 /* BillInputView.swift in Sources */,
 				8E9823172AFCFF9600E51769 /* ThemeFont.swift in Sources */,
+				8EDD324D2B0637F3007164FE /* Double+Extension.swift in Sources */,
 				8E2DD0AB2B0239300069DF87 /* HeaderView.swift in Sources */,
 				8E9822C82AFCCB2900E51769 /* AppDelegate.swift in Sources */,
 				8E98231D2AFE2A4100E51769 /* LabelFactory.swift in Sources */,

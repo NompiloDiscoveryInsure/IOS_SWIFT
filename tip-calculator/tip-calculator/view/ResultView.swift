@@ -39,6 +39,21 @@ class ResultView: UIView{
         return view
     }()
     
+    private let totalBillView: AmountView = {
+        let view = AmountView(
+        title: "Total Bill",
+        textAlignment: .left
+        )
+        return view
+    }()
+    
+    private let totalTipView: AmountView = {
+        let view = AmountView(
+        title: "Total Tip",
+        textAlignment: .right
+        )
+        return view
+    }()
     
     //4. Add a stack view to align image and logo text
     
@@ -59,9 +74,9 @@ class ResultView: UIView{
     //horizontal stack
     private lazy var hStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
-            AmountView(title: "Total bill", textAlignment: .left),
+            totalBillView,
             UIView(),
-            AmountView(title: "Total Tip", textAlignment: .right)])
+            totalTipView])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
         return stackView
@@ -76,6 +91,20 @@ class ResultView: UIView{
     
     required init?(coder: NSCoder) {
         fatalError("init(coder: has not been implemented")
+    }
+    
+    
+    func configure(result: Result){
+        let text = NSMutableAttributedString(
+            string: result.amountPerPerson.currencyFormatted,
+            attributes: [.font: Themefont.bold(ofSize: 48)])
+        text.addAttributes([
+               .font: Themefont.bold(ofSize: 24)
+            ], range: NSMakeRange(0, 1))
+        AmountPerPersonLabel.attributedText = text
+        
+        totalBillView.configure(amount: result.totalBill)
+        totalTipView.configure(amount: result.totalTip)
     }
     
     //5. put together overall layout

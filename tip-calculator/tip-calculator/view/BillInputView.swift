@@ -82,6 +82,11 @@ class BillInputView: UIView{
         fatalError("init(coder: has not been implemented")
     }
     
+    func reset() {
+        textField.text = nil
+        billSubject.send(0)
+    }
+    
     //create observer function that takes input value
     private func observe(){
         textField.textPublisher.sink{[unowned self]
