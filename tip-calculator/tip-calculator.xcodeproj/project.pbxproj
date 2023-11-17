@@ -39,6 +39,7 @@
 		8EDD32492B03D895007164FE /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD32482B03D895007164FE /* UIResponder+Extension.swift */; };
 		8EDD324B2B061361007164FE /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324A2B061361007164FE /* Int+Extension.swift */; };
 		8EDD324D2B0637F3007164FE /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324C2B0637F3007164FE /* Double+Extension.swift */; };
+		8EDD324F2B0777BF007164FE /* tip_calculatorSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324E2B0777BF007164FE /* tip_calculatorSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		8EDD32482B03D895007164FE /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
 		8EDD324A2B061361007164FE /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		8EDD324C2B0637F3007164FE /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		8EDD324E2B0777BF007164FE /* tip_calculatorSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8E9822DE2AFCCB2B00E51769 /* tip_calculatorTests.swift */,
+				8EDD324E2B0777BF007164FE /* tip_calculatorSnapshotTests.swift */,
 			);
 			path = "tip-calculatorTests";
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9822DF2AFCCB2B00E51769 /* tip_calculatorTests.swift in Sources */,
+				8EDD324F2B0777BF007164FE /* tip_calculatorSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
