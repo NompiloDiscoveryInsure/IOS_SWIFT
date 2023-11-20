@@ -14,8 +14,6 @@
 		8E9822D12AFCCB2B00E51769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9822D02AFCCB2B00E51769 /* Assets.xcassets */; };
 		8E9822D42AFCCB2B00E51769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9822D22AFCCB2B00E51769 /* LaunchScreen.storyboard */; };
 		8E9822DF2AFCCB2B00E51769 /* tip_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9822DE2AFCCB2B00E51769 /* tip_calculatorTests.swift */; };
-		8E9822E92AFCCB2B00E51769 /* tip_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9822E82AFCCB2B00E51769 /* tip_calculatorUITests.swift */; };
-		8E9822EB2AFCCB2B00E51769 /* tip_calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9822EA2AFCCB2B00E51769 /* tip_calculatorUITestsLaunchTests.swift */; };
 		8E9822FC2AFCCC5700E51769 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9822FB2AFCCC5700E51769 /* CombineCocoa */; };
 		8E9822FF2AFCD14100E51769 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9822FE2AFCD14100E51769 /* SnapKit */; };
 		8E9823022AFCD1DB00E51769 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9823012AFCD1DB00E51769 /* CombineCocoa */; };
@@ -40,6 +38,10 @@
 		8EDD324B2B061361007164FE /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324A2B061361007164FE /* Int+Extension.swift */; };
 		8EDD324D2B0637F3007164FE /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324C2B0637F3007164FE /* Double+Extension.swift */; };
 		8EDD324F2B0777BF007164FE /* tip_calculatorSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD324E2B0777BF007164FE /* tip_calculatorSnapshotTests.swift */; };
+		8EDD32532B0B64C3007164FE /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD32522B0B64C3007164FE /* ScreenIdentifier.swift */; };
+		8EDD326E2B0B74F9007164FE /* tip_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD326D2B0B74F9007164FE /* tip_calculatorUITests.swift */; };
+		8EDD32702B0B7507007164FE /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD326F2B0B7507007164FE /* CalculatorScreen.swift */; };
+		8EDD32722B0B768E007164FE /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD32522B0B64C3007164FE /* ScreenIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +73,6 @@
 		8E9822DA2AFCCB2B00E51769 /* tip-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tip-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9822DE2AFCCB2B00E51769 /* tip_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorTests.swift; sourceTree = "<group>"; };
 		8E9822E42AFCCB2B00E51769 /* tip-calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tip-calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E9822E82AFCCB2B00E51769 /* tip_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorUITests.swift; sourceTree = "<group>"; };
-		8E9822EA2AFCCB2B00E51769 /* tip_calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8E9823092AFCE7AD00E51769 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		8E98230D2AFCE9F800E51769 /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
 		8E98230F2AFCEB0200E51769 /* TipInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInputView.swift; sourceTree = "<group>"; };
@@ -92,6 +92,9 @@
 		8EDD324A2B061361007164FE /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		8EDD324C2B0637F3007164FE /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		8EDD324E2B0777BF007164FE /* tip_calculatorSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorSnapshotTests.swift; sourceTree = "<group>"; };
+		8EDD32522B0B64C3007164FE /* ScreenIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenIdentifier.swift; sourceTree = "<group>"; };
+		8EDD326D2B0B74F9007164FE /* tip_calculatorUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tip_calculatorUITests.swift; sourceTree = "<group>"; };
+		8EDD326F2B0B7507007164FE /* CalculatorScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +179,8 @@
 		8E9822E72AFCCB2B00E51769 /* tip-calculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8E9822E82AFCCB2B00E51769 /* tip_calculatorUITests.swift */,
-				8E9822EA2AFCCB2B00E51769 /* tip_calculatorUITestsLaunchTests.swift */,
+				8EDD326D2B0B74F9007164FE /* tip_calculatorUITests.swift */,
+				8EDD326F2B0B7507007164FE /* CalculatorScreen.swift */,
 			);
 			path = "tip-calculatorUITests";
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			children = (
 				8EDD323F2B0260CD007164FE /* Tip.swift */,
 				8EDD32442B03814E007164FE /* Result.swift */,
+				8EDD32522B0B64C3007164FE /* ScreenIdentifier.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -336,6 +340,7 @@
 					};
 					8E9822E32AFCCB2B00E51769 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 8E9822C32AFCCB2900E51769;
 					};
 				};
@@ -407,6 +412,7 @@
 				8E98231F2AFE65DF00E51769 /* UIView+Extension.swift in Sources */,
 				8E9823122AFCEB4F00E51769 /* SplitInputView.swift in Sources */,
 				8E9823152AFCFF7300E51769 /* ThemeColor.swift in Sources */,
+				8EDD32532B0B64C3007164FE /* ScreenIdentifier.swift in Sources */,
 				8E9823232B01FBD000E51769 /* ResultView.swift in Sources */,
 				8E98231A2AFD003C00E51769 /* UIColor+Extension.swift in Sources */,
 				8E98230A2AFCE7AD00E51769 /* LogoView.swift in Sources */,
@@ -434,8 +440,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E9822EB2AFCCB2B00E51769 /* tip_calculatorUITestsLaunchTests.swift in Sources */,
-				8E9822E92AFCCB2B00E51769 /* tip_calculatorUITests.swift in Sources */,
+				8EDD326E2B0B74F9007164FE /* tip_calculatorUITests.swift in Sources */,
+				8EDD32722B0B768E007164FE /* ScreenIdentifier.swift in Sources */,
+				8EDD32702B0B7507007164FE /* CalculatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,13 +679,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tip-calculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "tip-calculator";
@@ -689,9 +703,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tip-calculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

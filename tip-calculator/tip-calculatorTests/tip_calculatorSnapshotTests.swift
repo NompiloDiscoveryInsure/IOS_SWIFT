@@ -62,13 +62,27 @@ final class tip_CalculatorSnapshotTests: XCTestCase{
     }
     
     
-    func testInitialCustomInputView(){
+    func testResultViewWithValues(){
         //given
         let size = CGSize(width: screenWidth, height: 224)
+        let result = Result(
+            amountPerPerson: 100.25,
+            totalBill: 45,
+            totalTip: 60)
         //when
-        let view = TipInputView()
+        let view = ResultView()
+        view.configure(result: result)
         //then
-        assertSnapshot(matching: view, as: .image(size: size),record: true)
+        assertSnapshot(matching: view, as: .image(size: size))
+    }
+    
+    func testBillInputViewWithValues(){
+        //given
+        let size = CGSize(width: screenWidth, height: 56)
+        //when
+        let view = BillInputView()
+        //then
+        assertSnapshot(matching: view, as: .image(size: size))
     }
     
     

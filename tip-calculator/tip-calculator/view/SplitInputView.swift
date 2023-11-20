@@ -24,6 +24,7 @@ class SplitInputView: UIView{
         let button = buildButton(
             text: "-",
             corners: [.layerMinXMaxYCorner, .layerMinXMaxYCorner])
+        button.accessibilityIdentifier = ScreenIdentifier.SplitInputView.decrementButton.rawValue
         button.tapPublisher.flatMap{[unowned self] _ in
           Just(splitSubject.value == 1 ? 1 : splitSubject.value - 1)
         }.assign(to: \.value, on: splitSubject)
@@ -35,6 +36,7 @@ class SplitInputView: UIView{
         let button = buildButton(
             text: "+",
             corners: [.layerMaxXMinYCorner, .layerMaxXMinYCorner])
+        button.accessibilityIdentifier = ScreenIdentifier.SplitInputView.incrementButton.rawValue
         button.tapPublisher.flatMap{[unowned self] _ in
          Just(splitSubject.value + 1)
         }.assign(to: \.value, on: splitSubject)
@@ -47,6 +49,7 @@ class SplitInputView: UIView{
             text: "1",
             font: Themefont.bold(ofSize: 20),
             backgroundColor: .white)
+            label.accessibilityIdentifier = ScreenIdentifier.SplitInputView.quantityValueLabel.rawValue
         
         return label
     }()
